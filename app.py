@@ -33,7 +33,7 @@ st.header("Bienvenidos",divider="blue")
 st.write("Este proyecto de redes y comunicaciones se enfoca en la implementación de un servidor utilizando Windows Server 2022, con estaciones de trabajo configuradas en Windows 7 como clientes. El objetivo es demostrar la instalación y configuración de un entorno de red funcional, optimizando la conectividad y el manejo de servicios a través de un servidor centralizado.")
 
 st.subheader("Configuracion para la instalacion de windows server",divider="blue")
-with st.expander("ver capturas de el procedimiento👇"):
+with st.expander("ver capturas del procedimiento👇"):
     
     st.subheader("Inicar instalacion")
     st.image("instalar.png")
