@@ -122,7 +122,7 @@ with st.expander("Haz clic para ver la descripción 👇"):
         y ingresamos con otra cuenta y ponemos la que creamos anteriormente.
         """)
 
-st.subheader("Compartir carpetas por usuairos",divider="blue")
+st.subheader("Compartir carpetas por usuarios",divider="blue")
 st.video("https://www.youtube.com/watch?v=AHkYmK2nXKU&list=PLGLrW3nmk_i5E7PUtmWEWu3w0D_6_2WKY&index=8")
 with st.expander("Haz clic para ver la descripción 👇"):
     st.write("""
