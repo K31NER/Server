@@ -23,10 +23,16 @@ st.markdown(
 with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/128/9792/9792988.png")
     st.header(":blue[Integrantes]",divider="gray")
-    st.write("• Andrés Felipe Ramírez Mackenzie")
-    st.write("• Keiner Zuñiga Romero")
-    st.write("• Mateo Villarreal Garnica")
-    st.write("• Salomon Garcia Reyes")
+    st.write("• Andrés Felipe Ramírez Mackenzie 🏳‍🌈")
+    st.write("• Keiner Zuñiga Romero 👨🏾")
+    st.write("• Mateo Villarreal Garnica 👓")
+    st.write("• Salomon Garcia Reyes🎧")
+    st.write("• Pastorcito.com🙏")
+    st.write("• El chico gel🗡")
+    st.write("• Yeison🤫")
+
+
+
 
 
 st.header("Bienvenidos",divider="blue")
@@ -38,18 +44,18 @@ with st.expander("ver capturas del procedimiento👇"):
     st.subheader("Inicar instalacion")
     st.image("instalar.png")
     st.write("""
-        Al configurar la maquina virtual del windows server no cargamos la iso, solo ponemos el nombre personalizado y elejimos la version de 2022
+        Al configurar la maquina virtual del windows server no cargamos la iso, solo ponemos el nombre personalizado y elejimos la version de 2022, ya mas adelante subirimos la iso del server.
         """)
     
     st.subheader("Desactivar disquete")
     st.image("disquete.png")
     st.write("""
-        Desactivamos la opcion de disquete en las configuraciones virtual box de windows server 
+        Desactivamos la opcion de disquete en las configuraciones virtual box de windows server, esto se hace para que aranque de manera directa con el disco
         """)
     st.subheader("Subir iso de el windows server")
     st.image("subir_iso.png")
     st.write("""
-        Cargamos la iso de windows server despues de realizaer las configuraciones, ya que el inicio no se cargo
+        Cargamos la iso de windows server despues de realizaer las configuraciones, ya que el inicio no se cargo, la buscamos en nuestros archivos
         """)
     
     st.subheader("Red adaptador puente")
@@ -130,9 +136,36 @@ with st.expander("Haz clic para ver la descripción 👇"):
         videos anteriores, solo que esta vez en lugar de elegir gruó users vamos a seleccionar el o los usuarios especificos, para que solo le salgan los archivos compartidos con ellos. Recordemos que debemos deshabilitar compartir los subfolders para que solo se comparta el principal.
         """)
 
-st.subheader("Conexion server linux",divider="blue")
-st.video("https://youtu.be/32UOj2R9FJY?si=KAjBuwvBl8gPmQlv")
+st.header("Conexion fisica",divider="violet")
+st.subheader("Cables ethernet")
+st.image("collage cable.jpg",use_column_width=True)
 with st.expander("Haz clic para ver la descripción 👇"):
     st.write("""
-        En este paso vamos a verificar la conexion de linux con nuestro servidor de windows server, para eso debemos tener el IP de linux(ubunto 24.10) ponemos un IP que este en el mismo rango que el server para este caso es 192.168.20.22 y como ruta por defecto ponemos el IP de windows server y para verificar hacemos ping al IP y al nombre del dominio
+        Comenzando con la parte física, se prepararon cables UTP de categoría 6, lo recomendado es utilizar cables de categoría 5e o superior.
+        Se utilizaron un total de 4 metros de cable y 6 conectores RJ45. Los cables fueron ponchados, y luego se fabricaron dos cables con doble conexión RJ45, 
+        que van del patch panel al switch de red. Los otros dos cables fueron pelados, pero solo se ponchó un extremo de cada uno;
+        estos cables conectan la parte trasera del patch panel con los portátiles.
         """)
+    
+st.subheader("Kit de trabajo")
+st.image("kit.jpg",use_column_width=True)
+with st.expander("Haz clic para ver la descripción 👇"):
+    st.write("""
+        """)
+
+st.subheader("Patch panel")
+st.image("panel.jpg",use_column_width=True)
+with st.expander("Haz clic para ver la descripción 👇"):
+    st.write("""Este es un dispositivo que nos ayudará a la realización de las conexión y las distribuciones de los cables
+            sirve para la gestion de cables de red, permitiendo conexiones faciles y ordenadas. Su organización ayuda a mantener un área
+            de trabajo limpia y ordenada y con ayuda de una ponchadora de impacto metemos los cables de en el orden o la organización
+            de los cables, en este caso, nosotros usamos la organización tipo B.""")
+
+st.subheader("Prueba de conexion")
+st.image("cap.jpg",use_column_width=True)
+with st.expander("Haz clic para ver la descripción 👇"):
+    st.write("""Se realizará la conexion final, cabe resaltar que al usar dos equipos uno debe usar el Windows server 2020 y el otro el Windows 7,
+            el portador de windows 7 debe ser añadido al dominio del server, mediante el apartado de sistemas y poniendo el DNS igual al del server. Una vez completados todos los pasos
+            ya el cliente se unirá a el servidor y se hará una prueba creando una carpeta que solo lo pueda ver el cliente. Cabe resaltar que debes modificar los permisos para que solo 
+            el cliente pueda verla, ya despues de esto se creará un archivo de texto (Lo mas simple de hacer) y se deberá mostrar en el cliente e igual el cliente puede modificar
+            y añadir carpetas y se debe mostrar en el server.""")
