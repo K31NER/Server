@@ -23,14 +23,10 @@ st.markdown(
 with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/128/9792/9792988.png")
     st.header(":blue[Integrantes]",divider="gray")
-    st.write("• Andrés Felipe Ramírez Mackenzie 🏳‍🌈")
-    st.write("• Keiner Zuñiga Romero 👨🏾")
-    st.write("• Mateo Villarreal Garnica 👓")
-    st.write("• Salomon Garcia Reyes🎧")
-    st.write("• Pastorcito.com🙏")
-    st.write("• El chico gel🗡")
-    st.write("• Yeison🤫")
-
+    st.write("• Andrés Felipe Ramírez Mackenzie ")
+    st.write("• Keiner Zuñiga Romero ")
+    st.write("• Mateo Villarreal Garnica ")
+    st.write("• Salomon Garcia Reyes")
 
 
 
